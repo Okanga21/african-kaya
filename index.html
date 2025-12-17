@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Kaya | Operation Goodwill - Environmental Conservation</title>
+    <meta name="description" content="African Kaya's Operation Goodwill initiative focuses on environmental conservation through tree planting, waste management, community clean-ups, and environmental education across Africa.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "earth-green": "#2D5A27",
+                        "warm-brown": "#8B4513",
+                        "sunset-orange": "#E67E22",
+                        "clay-red": "#A8433E",
+                        "sand-beige": "#F5E8D0",
+                        "forest-green": "#1B4D3E",
+                        "accent-green": "#4CAF50"
+                    },
+                    fontFamily: {
+                        "heading": ["Playfair Display", "serif"],
+                        "body": ["Inter", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        "hero-pattern": "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1600/900?random=1')",
+                        "initiative-pattern": "linear-gradient(rgba(45, 90, 39, 0.9), rgba(45, 90, 39, 0.9)), url('https://picsum.photos/1600/800?random=2')"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .btn-primary {
+            background-color: #2D5A27;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1B4D3E;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-secondary {
+            background-color: #E67E22;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #D35400;
+            transform: translateY(-2px);
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body text-gray-800 bg-sand-beige">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full bg-earth-green flex items-center justify-center mr-3">
+                        <i class="fas fa-leaf text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-heading text-2xl font-bold text-earth-green">African Kaya</h1>
+                        <p class="text-sm text-warm-brown">Operation Goodwill</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-earth-green hover:text-forest-green font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-earth-green hover:text-forest-green font-medium transition-colors">About Us</a>
+                    <a href="#initiative" class="text-earth-green hover:text-forest-green font-medium transition-colors">Our Initiative</a>
+                    <a href="#impact" class="text-earth-green hover:text-forest-green font-medium transition-colors">Impact</a>
+                    <a href="#involve" class="text-earth-green hover:text-forest-green font-medium transition-colors">Get Involved</a>
+                </div>
+                
+                <button class="btn-primary px-6 py-2 rounded-full font-medium hidden md:block">
+                    Donate Now
+                </button>
+                
+                <button class="md:hidden text-earth-green">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden mt-4 hidden" id="mobileMenu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="text-earth-green hover:text-forest-green font-medium py-2">Home</a>
+                    <a href="#about" class="text-earth-green hover:text-forest-green font-medium py-2">About Us</a>
+                    <a href="#initiative" class="text-earth-green hover:text-forest-green font-medium py-2">Our Initiative</a>
+                    <a href="#impact" class="text-earth-green hover:text-forest-green font-medium py-2">Impact</a>
+                    <a href="#involve" class="text-earth-green hover:text-forest-green font-medium py-2">Get Involved</a>
+                    <button class="btn-primary px-6 py-2 rounded-full font-medium w-full mt-2">
+                        Donate Now
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-hero-pattern bg-cover bg-center text-white">
+        <div class="container mx-auto px-4 py-24 md:py-32">
+            <div class="max-w-3xl">
+                <h2 class="font-heading text-4xl md:text-6xl font-bold mb-6">Protecting Africa's Natural Heritage</h2>
+                <p class="text-xl mb-8 leading-relaxed">Through Operation Goodwill, we're building sustainable communities and preserving our environment for future generations.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="btn-secondary px-8 py-3 rounded-full font-medium text-lg">
+                        Join Our Mission
+                    </button>
+                    <button class="bg-white text-earth-green px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-100 transition-colors">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-sand-beige to-transparent"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold text-earth-green mb-4">About African Kaya</h2>
+                <div class="w-24 h-1 bg-sunset-orange mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">African Kaya is a community-driven organization dedicated to environmental conservation and sustainable development across the African continent.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="font-heading text-3xl font-bold text-forest-green mb-6">Our Vision</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">We envision an Africa where communities live in harmony with nature, where environmental stewardship is woven into the fabric of our cultures, and where future generations inherit a thriving, sustainable continent.</p>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">Founded on the principles of Ubuntu - "I am because we are" - African Kaya brings together volunteers, communities, and partners to create lasting environmental change.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-sand-beige p-6 rounded-lg">
+                            <div class="w-12 h-12 rounded-full bg-earth-green flex items-center justify-center mb-4">
+                                <i class="fas fa-hands-helping text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-lg text-forest-green mb-2">Community First</h4>
+                            <p class="text-gray-600">Empowering local communities as environmental stewards</p>
+                        </div>
+                        <div class="bg-sand-beige p-6 rounded-lg">
+                            <div class="w-12 h-12 rounded-full bg-earth-green flex items-center justify-center mb-4">
+                                <i class="fas fa-seedling text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-lg text-forest-green mb-2">Sustainable Impact</h4>
+                            <p class="text-gray-600">Creating programs that last for generations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="https://picsum.photos/600/500?random=3" alt="African community working together on environmental project" class="w-full rounded-lg shadow-lg" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operation Goodwill Initiative -->
+    <section id="initiative" class="section-padding bg-inititative-pattern text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold mb-4">Operation Goodwill</h2>
+                <div class="w-24 h-1 bg-sunset-orange mx-auto mb-6"></div>
+                <p class="text-xl max-w-3xl mx-auto">Our flagship environmental conservation initiative focused on creating tangible, sustainable change across African communities.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-6">
+                        <i class="fas fa-tree text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Tree Planting</h3>
+                    <p class="mb-6">Restoring native forests and creating urban green spaces through community-led planting initiatives.</p>
+                    <div class="text-sunset-orange font-semibold">50,000+ Trees Planted</div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-6">
+                        <i class="fas fa-recycle text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Waste Management</h3>
+                    <p class="mb-6">Implementing sustainable waste collection, recycling programs, and circular economy solutions.</p>
+                    <div class="text-sunset-orange font-semibold">200+ Communities Served</div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Community Clean-ups</h3>
+                    <p class="mb-6">Organizing regular community clean-up events to restore public spaces and natural habitats.</p>
+                    <div class="text-sunset-orange font-semibold">10,000+ Volunteers</div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Environmental Education</h3>
+                    <p class="mb-6">Teaching sustainable practices in schools and communities to build environmental awareness.</p>
+                    <div class="text-sunset-orange font-semibold">100,000+ Students Reached</div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <button class="btn-secondary px-8 py-3 rounded-full font-medium text-lg">
+                    Explore Our Programs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section-padding bg-sand-beige">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold text-earth-green mb-4">Our Impact</h2>
+                <div class="w-24 h-1 bg-sunset-orange mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Measuring success through tangible environmental improvements and community empowerment.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-5xl font-bold text-earth-green mb-4">500K+</div>
+                    <h3 class="text-xl font-bold text-forest-green mb-3">Trees Planted</h3>
+                    <p class="text-gray-600">Native species restoring ecosystems across 15 countries</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-5xl font-bold text-earth-green mb-4">200+</div>
+                    <h3 class="text-xl font-bold text-forest-green mb-3">Communities Transformed</h3>
+                    <p class="text-gray-600">Sustainable waste management systems implemented</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-5xl font-bold text-earth-green mb-4">50K+</div>
+                    <h3 class="text-xl font-bold text-forest-green mb-3">Active Volunteers</h3>
+                    <p class="text-gray-600">Community members driving change in their neighborhoods</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h3 class="font-heading text-3xl font-bold text-forest-green mb-6">Success Story: The Green Village Project</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">In rural Kenya, we transformed a struggling community into a model of sustainability. Through Operation Goodwill, we implemented:</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent-green mt-1 mr-3"></i>
+                                <span>Community-led tree planting restoring 50 hectares of degraded land</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent-green mt-1 mr-3"></i>
+                                <span>Waste-to-resource program creating local employment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent-green mt-1 mr-3"></i>
+                                <span>Environmental education integrated into school curriculum</span>
+                            </li>
+                        </ul>
+                        <button class="btn-primary px-6 py-3 rounded-full font-medium">
+                            Read More Stories
+                        </button>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://picsum.photos/600/400?random=4" alt="Green village project showing community transformation" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="involve" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold text-earth-green mb-4">Get Involved</h2>
+                <div class="w-24 h-1 bg-sunset-orange mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Join us in creating a sustainable future for Africa. Every action counts, and together we can make a difference.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-sand-beige p-8 rounded-xl text-center card-hover">
+                    <div class="w-20 h-20 rounded-full bg-earth-green flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hand-holding-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-forest-green mb-4">Donate</h3>
+                    <p class="text-gray-700 mb-6">Your financial support helps us expand our programs and reach more communities.</p>
+                    <button class="btn-primary px-6 py-3 rounded-full font-medium w-full">
+                        Make a Donation
+                    </button>
+                </div>
+                
+                <div class="bg-sand-beige p-8 rounded-xl text-center card-hover">
+                    <div class="w-20 h-20 rounded-full bg-earth-green flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-forest-green mb-4">Volunteer</h3>
+                    <p class="text-gray-700 mb-6">Join our community of volunteers and participate in local conservation projects.</p>
+                    <button class="btn-secondary px-6 py-3 rounded-full font-medium w-full">
+                        Become a Volunteer
+                    </button>
+                </div>
+                
+                <div class="bg-sand-beige p-8 rounded-xl text-center card-hover">
+                    <div class="w-20 h-20 rounded-full bg-earth-green flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-forest-green mb-4">Partner With Us</h3>
+                    <p class="text-gray-700 mb-6">Businesses and organizations can collaborate with us for greater impact.</p>
+                    <button class="btn-primary px-6 py-3 rounded-full font-medium w-full">
+                        Explore Partnerships
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Newsletter Signup -->
+            <div class="max-w-2xl mx-auto bg-gradient-to-r from-earth-green to-forest-green rounded-xl p-8 text-white">
+                <h3 class="text-2xl font-bold mb-4 text-center">Stay Connected</h3>
+                <p class="text-center mb-6">Subscribe to our newsletter for updates on our projects and impact stories.</p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
+                    <button type="submit" class="btn-secondary px-6 py-3 rounded-lg font-medium whitespace-nowrap">
+                        Subscribe
+                    </button>
+                </form>
+                <p class="text-sm text-center mt-4 text-white/80">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-forest-green text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-3">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-heading text-2xl font-bold">African Kaya</h2>
+                            <p class="text-sm text-white/80">Operation Goodwill</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 mb-6">Building sustainable communities through environmental conservation across Africa.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-white/80 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-white/80 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#initiative" class="text-white/80 hover:text-white transition-colors">Our Initiative</a></li>
+                        <li><a href="#impact" class="text-white/80 hover:text-white transition-colors">Impact</a></li>
+                        <li><a href="#involve" class="text-white/80 hover:text-white transition-colors">Get Involved</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Programs</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Tree Planting</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Waste Management</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Community Clean-ups</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Environmental Education</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Youth Engagement</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-sunset-orange"></i>
+                            <span class="text-white/80">123 Conservation Way<br>Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3 text-sunset-orange"></i>
+                            <span class="text-white/80">+254 740361313</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-sunset-orange"></i>
+                            <span class="text-white/80">info@africankaya@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-white/20 text-center">
+                <p class="text-white/60">© 2024 African Kaya - Operation Goodwill. All rights reserved.</p>
+                <p class="text-white/60 mt-2">Building a greener Africa, one community at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Define data at the beginning
+        const navigationData = [
+            { "id": 1, "label": "Home", "href": "#home" },
+            { "id": 2, "label": "About Us", "href": "#about" },
+            { "id": 3, "label": "Our Initiative", "href": "#initiative" },
+            { "id": 4, "label": "Impact", "href": "#impact" },
+            { "id": 5, "label": "Get Involved", "href": "#involve" }
+        ];
+
+        const impactStats = [
+            { "id": 1, "value": "50K+", "label": "Trees Planted", "description": "Native species restoring ecosystems across 35 counties" },
+            { "id": 2, "value": "200+", "label": "Communities Transformed", "description": "Sustainable waste management systems implemented" },
+            { "id": 3, "value": "50K+", "label": "Active Volunteers", "description": "Community members driving change in their neighborhoods" }
+        ];
+
+        const initiativeCards = [
+            { 
+                "id": 1, 
+                "icon": "fa-tree", 
+                "title": "Tree Planting", 
+                "description": "Restoring native forests and creating urban green spaces through community-led planting initiatives.",
+                "stat": "50,000+ Trees Planted"
+            },
+            { 
+                "id": 2, 
+                "icon": "fa-recycle", 
+                "title": "Waste Management", 
+                "description": "Implementing sustainable waste collection, recycling programs, and circular economy solutions.",
+                "stat": "200+ Communities Served"
+            },
+            { 
+                "id": 3, 
+                "icon": "fa-users", 
+                "title": "Community Clean-ups", 
+                "description": "Organizing regular community clean-up events to restore public spaces and natural habitats.",
+                "stat": "10,000+ Volunteers"
+            },
+            { 
+                "id": 4, 
+                "icon": "fa-graduation-cap", 
+                "title": "Environmental Education", 
+                "description": "Teaching sustainable practices in schools and communities to build environmental awareness.",
+                "stat": "100,000+ Students Reached"
+            }
+        ];
+
+        // Mobile menu toggle
+        document.addEventListener("DOMContentLoaded", function() {
+            const mobileMenuButton = document.querySelector("button.md\\:hidden");
+            const mobileMenu = document.getElementById("mobileMenu");
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener("click", function() {
+                    mobileMenu.classList.toggle("hidden");
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href");
+                    if (targetId === "#") return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: "smooth"
+                        });
+                        
+                        // Close mobile menu if open
+                        if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+                            mobileMenu.classList.add("hidden");
+                        }
+                    }
+                });
+            });
+
+            // Newsletter form submission
+            const newsletterForm = document.querySelector("form");
+            if (newsletterForm) {
+                newsletterForm.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    const emailInput = this.querySelector("input[type='email']");
+                    if (emailInput && emailInput.value) {
+                        alert("Thank you for subscribing to African Kaya's newsletter!");
+                        emailInput.value = "";
+                    }
+                });
+            }
+
+            // Donation button handlers
+            document.querySelectorAll("button.btn-primary, button.btn-secondary").forEach(button => {
+                if (button.textContent.includes("Donate") || button.textContent.includes("Join")) {
+                    button.addEventListener("click", function() {
+                        alert("Thank you for your interest in supporting African Kaya! You will be redirected to our secure donation portal.");
+                    });
+                }
+            });
+        });
+
+        // Generate impact stats dynamically (example of reusable function)
+        function generateImpactStats() {
+            return impactStats.map(stat => `
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-5xl font-bold text-earth-green mb-4">${stat.value}</div>
+                    <h3 class="text-xl font-bold text-forest-green mb-3">${stat.label}</h3>
+                    <p class="text-gray-600">${stat.description}</p>
+                </div>
+            `).join("");
+        }
+
+        // Generate initiative cards dynamically
+        function generateInitiativeCards() {
+            return initiativeCards.map(card => `
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-6">
+                        <i class="fas ${card.icon} text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">${card.title}</h3>
+                    <p class="mb-6">${card.description}</p>
+                    <div class="text-sunset-orange font-semibold">${card.stat}</div>
+                </div>
+            `).join("");
+        }
+    </script>
+</body>
+</html>
